@@ -15,8 +15,8 @@ def main():
     res = Set([])
     my_path = sys.argv[1]
     for root, dirs, files in os.walk(my_path):
-        for file in files:
-            if file.endswith(".h"):
+        for f in files:
+            if f.endswith(".h"):
                 correct_path = root.replace(my_path, "${workspaceFolder}")
                 correct_path = correct_path.replace('\\', '/')
                 res.add(correct_path)
