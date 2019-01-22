@@ -1,0 +1,1 @@
+vs_community.exe --add Microsoft.VisualStudio.Workload.NativeDesktop --includeOptional

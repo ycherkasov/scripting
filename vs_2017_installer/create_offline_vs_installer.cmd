@@ -1,0 +1,1 @@
+vs_community.exe --layout c:\vs2017layout --lang en-US

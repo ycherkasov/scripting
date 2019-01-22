@@ -1,0 +1,1 @@
+vs_community.exe --layout C:\Users\atatat\Downloads\VS2017Offline --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
