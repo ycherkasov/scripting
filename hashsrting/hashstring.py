@@ -13,7 +13,7 @@ def main():
     hash_len = 8
     string_to_hash = sys.argv[1]
     if len(sys.argv) == 3:
-        hash_len = sys.argv[1]
+        hash_len = sys.argv[2]
     my_hash = int(hashlib.sha1(string_to_hash.encode('utf-8')).hexdigest(), 16) % (10 ** hash_len)
     print(my_hash)
     r = Tk()
