@@ -9,6 +9,9 @@
       <w>homedir</w>
       <w>cortana</w>
       <w>Cortana</w>
+      <w>Valueformat</w>
+      <w>POWERSHELL</w>
+      <w>RintimeBrocker</w>
     </words>
   </dictionary>
 </component>
