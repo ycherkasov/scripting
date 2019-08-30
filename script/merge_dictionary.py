@@ -1,6 +1,6 @@
 import sys
 import argparse
-import xml.etree.ElementTree as element_tree
+import xml.etree.ElementTree as xmltree
 
 
 def read_idea_dictionary(xml_file_path):
@@ -9,7 +9,7 @@ def read_idea_dictionary(xml_file_path):
     :return: list of dictionary items
     """
     idea_dictionary = []
-    tree = element_tree.parse(xml_file_path)
+    tree = xmltree.parse(xml_file_path)
     root = tree.getroot()
 
     for child in root.findall("./dictionary/words/w"):
