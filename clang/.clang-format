@@ -1,0 +1,6 @@
+﻿---
+BasedOnStyle: Mozilla
+AccessModifierOffset: '0'
+AlignTrailingComments: 'true'
+
+...
