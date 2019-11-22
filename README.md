@@ -22,6 +22,7 @@ Collect here scripts and config in different languages and for different OS-es f
 * Windows Script Host: create users and home directories from the list
 * Python: the script looking for all directories with c/C++ headers and prints output into file
 * Python: script creates a simple string hash
+* Python: bulk rename script
 * Build C++ Boost
 * Build OpenSSL
 * Clang-format example config
