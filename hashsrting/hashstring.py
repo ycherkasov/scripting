@@ -3,7 +3,7 @@ import sys
 import hashlib
 from tkinter import Tk
 
-__doc__ = """The script creates a srting hash, need for my personal purposes"""
+__doc__ = """The script creates a simple string hash, need for my personal purposes"""
 
 def main():
     if len(sys.argv) != 2 and len(sys.argv) != 3:
