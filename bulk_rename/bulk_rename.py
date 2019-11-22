@@ -26,6 +26,7 @@ class BulkRename:
                 old_item = item
                 new_item = item.replace(item[:2], "{:03d}".format(self.counter), 1)
                 self.counter = self.counter + 1
+                os.rename(os.path.join(self.input_dir, old_item), os.path.join(self.input_dir, new_item))
                 logger.info("Rename %s to %s" % (old_item, new_item))
 
 
