@@ -9,12 +9,25 @@ import log_helper
 logger = log_helper.setup_logger(name="bulk_rename", level=logging.DEBUG, log_to_file=False)
 
 
-class BulkRemove:
+class BulkRename:
 
     def __init__(self, input_dir, regexp):
+        self.counter = 0
         self.regexp = regexp
         self.input_dir = input_dir
         logger.info(self.input_dir)
+
+    def rename(self):
+        """
+        Rename file with leading two digits to leading 3 digits
+        """
+        for item in os.listdir(self.input_dir):
+            if re.match(u"[0-9]{2}\\D.+\.jpg", item):
+                old_item = item
+                new_item = item.replace(item[:2], "{:03d}".format(self.counter), 1)
+                self.counter = self.counter + 1
+                os.rename(os.path.join(self.input_dir, old_item), os.path.join(self.input_dir, new_item))
+                logger.info("Rename %s to %s" % (old_item, new_item))
 
     def remove(self):
         """
@@ -24,6 +37,7 @@ class BulkRemove:
             filename = os.path.join(root, files)
             if filename.startswith("._"):
                 logger.info(filename)
+
 
 
 def main():
@@ -53,8 +67,8 @@ def main():
         logger.warning("Source directory '{0}' does not exist".format(input_dir))
         return 1
 
-    file_processor = BulkRemove(input_dir=input_dir, regexp=args.regexp)
-    file_processor.remove()
+    file_processor = BulkRename(input_dir=input_dir, regexp=args.regexp)
+    file_processor.rename()
 
     return 0
 
