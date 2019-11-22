@@ -48,8 +48,8 @@ class FileProcessor:
 
 def main():
     """
-    Perform backup or unpacking
-    :return: Archiver system return code
+    Perform directory processing
+    :return: System return code
     """
     parser = argparse.ArgumentParser(description='Command-line interface')
     parser.add_argument('--input-dir',
