@@ -1,6 +1,7 @@
+import os
 import sys
 import argparse
-import xml.etree.ElementTree as xmltree
+import xml.etree.ElementTree as XmlTree
 
 
 def read_idea_dictionary(xml_file_path):
@@ -9,7 +10,7 @@ def read_idea_dictionary(xml_file_path):
     :return: list of dictionary items
     """
     idea_dictionary = []
-    tree = xmltree.parse(xml_file_path)
+    tree = XmlTree.parse(xml_file_path)
     root = tree.getroot()
 
     for child in root.findall("./dictionary/words/w"):
@@ -46,20 +47,28 @@ def main():
                         action='append',
                         nargs=1,
                         dest='text_dictionary',
-                        default='UserWords.txt',
                         required=False)
 
     args = parser.parse_args()
 
+    print(args.idea_dictionary)
+    print(args.text_dictionary)
+
     merged_list = set()
 
     for idea_xml_file in args.idea_dictionary:
-        print("IDEA dictionary file: %s" % idea_xml_file)
-        merged_list.union(set(read_idea_dictionary(idea_xml_file)))
+        idea_dict_path = os.path.abspath(idea_xml_file[0])
+        print("IDEA dictionary file: %s" % idea_dict_path)
+        if not os.path.isfile(idea_dict_path):
+            return 1
+        # merged_list.union(set(read_idea_dictionary(idea_xml_file)))
     
     for text_file in args.text_dictionary:
-        print("User VAssist file: %s" % text_file)
-        merged_list.union(set(read_vassist_dictionary(text_file)))
+        text_file_path = os.path.abspath(text_file[0])
+        print("User VAssist file: %s" % text_file_path)
+        if not os.path.isfile(text_file_path):
+            return 1
+        # merged_list.union(set(read_vassist_dictionary(text_file)))
 
     print(merged_list)
 
