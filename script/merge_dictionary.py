@@ -6,69 +6,90 @@ import xml.dom.minidom as minidom
 
 
 class IdeaDictionaryProvider:
-
-    def __init__(self, filename):
-        self.filename = filename
-        
-
-def write_idea_dictionary(xml_file_path, new_dictionary):
     """
-    :param xml_file_path: Path to standard IDEA dictionary or user-defined XML dictionary file
-    :param new_dictionary: Merged dictionary thom that and other sources
+    Provider class for dictionary in IDEA format.
+    IDEA dictionary format is XML with pre-defined structure:
+    <component name="ProjectDictionaryState">
+        <dictionary name="username">
+            <words>
+                <w>Cortana</w>
+                <w>Filesize</w>
+            </words>
+        </dictionary>
+    </component>
+    DictionaryProvider class has read() and write(new_dictionary) methods
     """
-    doc = minidom.Document();
 
-    component = doc.createElement("component")
-    component.setAttribute("name", "ProjectDictionaryState")
-    doc.appendChild(component)
+    def __init__(self, xml_file_path):
+        self.xml_file_path = xml_file_path
+        if not os.path.isfile(self.xml_file_path):
+            raise RuntimeError("File does not exist: %s" % self.xml_file_path)
+        self.idea_dictionary = []
+        tree = XmlTree.parse(xml_file_path)
+        root = tree.getroot()
 
-    dictionary = doc.createElement("dictionary")
-    dictionary.setAttribute("name", "atatat")
-    component.appendChild(dictionary)
+        for child in root.findall("./dictionary/words/w"):
+            self.idea_dictionary.append(child.text)
 
-    words = doc.createElement("words")
-    dictionary.appendChild(words)
+    def read(self):
+        """
+        :return: list of dictionary items
+        """
+        return self.idea_dictionary
 
-    for item in new_dictionary:
-        w = doc.createElement("w")
-        dict_item = doc.createTextNode(item)
-        w.appendChild(dict_item)
-        words.appendChild(w)
+    def write(self, new_dictionary):
+        """
+        :param new_dictionary: New dictionary to write, normally merged from different sources
+        """
+        doc = minidom.Document()
 
-    xml_text = doc.toprettyxml(indent="  ")
-    with open(xml_file_path, "w") as idea_dict:
-        idea_dict.write(xml_text)
+        component = doc.createElement("component")
+        component.setAttribute("name", "ProjectDictionaryState")
+        doc.appendChild(component)
+
+        dictionary = doc.createElement("dictionary")
+        dictionary.setAttribute("name", "atatat")
+        component.appendChild(dictionary)
+
+        words = doc.createElement("words")
+        dictionary.appendChild(words)
+
+        for item in new_dictionary:
+            w = doc.createElement("w")
+            dict_item = doc.createTextNode(item)
+            w.appendChild(dict_item)
+            words.appendChild(w)
+
+        xml_text = doc.toprettyxml(indent="  ")
+        with open(self.xml_file_path, "w") as idea_dict:
+            idea_dict.write(xml_text)
 
 
-def write_vassist_dictionary(text_file_path, new_dictionary):
-    with open(text_file_path, 'w') as vassist_dict:
-        vassist_dict.write("\n".join(new_dictionary))
-
-
-def read_idea_dictionary(xml_file_path):
+class VisualAssistDictionaryProvider:
     """
-    :param xml_file_path: Path to standard IDEA dictionary or user-defined XML dictionary file
-    :return: list of dictionary items
+    Provider class for dictionary in Visual Assist format.
+    DictionaryProvider class has read() and write(new_dictionary) method.
+    Visual Assist dictionary format is EOL-separated plain text
     """
-    idea_dictionary = []
-    tree = XmlTree.parse(xml_file_path)
-    root = tree.getroot()
 
-    for child in root.findall("./dictionary/words/w"):
-        idea_dictionary.append(child.text)
+    def __init__(self, text_file_path):
+        self.text_dictionary = []
+        self.text_file_path = text_file_path
+        with open(text_file_path) as f:
+            self.text_dictionary = [item.strip() for item in f.readlines()]
 
-    return idea_dictionary
+    def read(self):
+        """
+        :return: list of dictionary items
+        """
+        return self.text_dictionary
 
-
-def read_vassist_dictionary(text_file_path):
-    """
-    :param text_file_path: Path to Visual Assist dictionary or user-defined text dictionary file
-    :return: list of dictionary items
-    """
-    with open(text_file_path) as f:
-        text_dictionary = [item.strip() for item in f.readlines()]
-
-    return text_dictionary
+    def write(self, new_dictionary):
+        """
+        :param new_dictionary: New dictionary to write, normally merged from different sources
+        """
+        with open(self.text_file_path, "w") as vassist_dict:
+            vassist_dict.write("\n".join(new_dictionary))
 
 
 def main():
