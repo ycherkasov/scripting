@@ -5,12 +5,11 @@ import xml.etree.ElementTree as XmlTree
 import xml.dom.minidom as minidom
 
 
-def pretty_formatting_xml(xml_file_path):
-    dom = minidom.parse(xml_file_path)  # or xml.dom.minidom.parseString(xml_string)
-    pretty_xml_as_string = dom.toprettyxml()
-    with open(xml_file_path, 'w') as xml_dict:
-        xml_dict.write(pretty_xml_as_string)
+class IdeaDictionaryProvider:
 
+    def __init__(self, filename):
+        self.filename = filename
+        
 
 def write_idea_dictionary(xml_file_path, new_dictionary):
     """
@@ -23,43 +22,27 @@ def write_idea_dictionary(xml_file_path, new_dictionary):
     component.setAttribute("name", "ProjectDictionaryState")
     doc.appendChild(component)
 
-    dictionary = doc.createElement("component")
+    dictionary = doc.createElement("dictionary")
     dictionary.setAttribute("name", "atatat")
     component.appendChild(dictionary)
 
-    # TODO: the rest
+    words = doc.createElement("words")
+    dictionary.appendChild(words)
 
-    xml_text = XmlTree.tostring(component)
-    with open(xml_file_path, "w") as idea_dict:
-        idea_dict.write(xml_text.decode("utf-8"))
-
-
-def write_idea_dictionary2(xml_file_path, new_dictionary):
-    """
-    :param xml_file_path: Path to standard IDEA dictionary or user-defined XML dictionary file
-    :param new_dictionary: Merged dictionary thom that and other sources
-    """
-    component = XmlTree.Element("component")
-    component.set("name", "ProjectDictionaryState")
-
-    dictionary = XmlTree.SubElement(component, "dictionary")
-    dictionary.set("name", "atatat")
-
-    words = XmlTree.SubElement(dictionary, "words")
     for item in new_dictionary:
-        w = XmlTree.SubElement(words, "w")
-        w.text = item
+        w = doc.createElement("w")
+        dict_item = doc.createTextNode(item)
+        w.appendChild(dict_item)
+        words.appendChild(w)
 
-    xml_text = XmlTree.tostring(component)
+    xml_text = doc.toprettyxml(indent="  ")
     with open(xml_file_path, "w") as idea_dict:
-        idea_dict.write(xml_text.decode("utf-8"))
+        idea_dict.write(xml_text)
 
 
 def write_vassist_dictionary(text_file_path, new_dictionary):
     with open(text_file_path, 'w') as vassist_dict:
-        vassist_dict.seek(0)
-        vassist_dict.writelines(new_dictionary)
-        vassist_dict.truncate()
+        vassist_dict.write("\n".join(new_dictionary))
 
 
 def read_idea_dictionary(xml_file_path):
@@ -107,7 +90,6 @@ def main():
 
     args = parser.parse_args()
     merged_list = set()
-    debug = True
 
     for idea_xml_file in args.idea_dictionary:
         idea_dict_path = os.path.abspath(idea_xml_file)
@@ -127,21 +109,21 @@ def main():
         print("Size of appended dictionary is %d words" % len(new_dictionary))
         merged_list = merged_list.union(new_dictionary)
 
+    merged_list = sorted(merged_list)
     print(merged_list)
     print("Size of resulting dictionary is %d words" % len(merged_list))
 
+    print(args.idea_dictionary)
+    print(args.text_dictionary)
     for idea_xml_file in args.idea_dictionary:
         idea_dict_path = os.path.abspath(idea_xml_file)
         print("Write new dictionary to %s" % idea_dict_path)
-        write_idea_dictionary(idea_dict_path, list(merged_list))
-
-    if debug:
-        return 0
+        write_idea_dictionary(idea_dict_path, merged_list)
 
     for text_file in args.text_dictionary:
         text_file_path = os.path.abspath(text_file)
         print("Write new dictionary to %s" % text_file_path)
-        write_vassist_dictionary(text_file_path, list(merged_list))
+        write_vassist_dictionary(text_file_path, merged_list)
 
     return 0
 
