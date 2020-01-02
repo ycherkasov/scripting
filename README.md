@@ -16,6 +16,8 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
 * Windows Cmd: silent install of Intel McAfee
 * Windows Cmd: count substring in text file
 * Windows Cmd: create Visual Studio 2017 offline installer (unfinished)
+* Windows Cmd: Build C++ Boost
+* Windows Cmd: Build OpenSSL
 * Windows Powershell: enable Linux subsystem om Windows 10
 * Windows Powershell: disable SMB1
 * Windows Registry: Deny Unspecified driver install
@@ -23,7 +25,5 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
 * Python: the script looking for all directories with c/C++ headers and prints output into file
 * Python: script creates a simple string hash
 * Python: bulk rename script
-* Build C++ Boost
-* Build OpenSSL
-* Clang-format example config
-* JSON Pretty Print
+* Python: JSON Pretty Print
+* Clang: Clang-format example config
