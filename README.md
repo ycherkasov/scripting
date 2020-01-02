@@ -1,5 +1,5 @@
 # scripting
-Collect here scripts and config in different languages and for different OS-es for automation purposes
+Scripts collection to automate boring stuff on Windows/Mac/Linux
 
 * Bash: add to *.tar only hidden directories
 * Bash: unpack archive into the current directory
@@ -26,4 +26,4 @@ Collect here scripts and config in different languages and for different OS-es f
 * Build C++ Boost
 * Build OpenSSL
 * Clang-format example config
-
+* JSON Pretty Print
