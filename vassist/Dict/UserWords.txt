@@ -5,6 +5,8 @@ POWERSHELL
 RintimeBrocker
 Valueformat
 atatat
+autocomplete
+autofocus
 cortana
 filesize
 filesystems
