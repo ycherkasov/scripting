@@ -140,12 +140,14 @@ def main():
                         help='Add XML-based IDEA dictionary as a merge source',
                         action='append',
                         dest='idea_dictionary',
-                        required=True)
+                        required=True,
+                        default=[])
     parser.add_argument('--vassist-dictionary',
                         help='Add plain text Visual Assist dictionary as a merge source',
                         action='append',
                         dest='text_dictionary',
-                        required=False)
+                        required=False,
+                        default=[])
 
     args = parser.parse_args()
     all_dictionaries = []
