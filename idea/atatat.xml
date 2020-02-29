@@ -9,8 +9,6 @@
       <w>RintimeBrocker</w>
       <w>Valueformat</w>
       <w>atatat</w>
-      <w>autocomplete</w>
-      <w>autofocus</w>
       <w>cortana</w>
       <w>filesize</w>
       <w>filesystems</w>
@@ -19,6 +17,7 @@
       <w>multithreading</w>
       <w>pagefile</w>
       <w>reinstallation</w>
+      <w>runbackup</w>
       <w>subindex</w>
       <w>subkey</w>
       <w>subkeys</w>
