@@ -5,11 +5,16 @@ POWERSHELL
 RintimeBrocker
 Valueformat
 atatat
+autocomplete
+autofocus
+comntools
 cortana
+cyber
 filesize
 filesystems
 filetable
 homedir
+msbuild
 multithreading
 pagefile
 reinstallation
@@ -20,3 +25,4 @@ subkeys
 subvalue
 vassist
 webgl
+yozh

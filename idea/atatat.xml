@@ -9,11 +9,16 @@
       <w>RintimeBrocker</w>
       <w>Valueformat</w>
       <w>atatat</w>
+      <w>autocomplete</w>
+      <w>autofocus</w>
+      <w>comntools</w>
       <w>cortana</w>
+      <w>cyber</w>
       <w>filesize</w>
       <w>filesystems</w>
       <w>filetable</w>
       <w>homedir</w>
+      <w>msbuild</w>
       <w>multithreading</w>
       <w>pagefile</w>
       <w>reinstallation</w>
@@ -24,6 +29,7 @@
       <w>subvalue</w>
       <w>vassist</w>
       <w>webgl</w>
+      <w>yozh</w>
     </words>
   </dictionary>
 </component>
