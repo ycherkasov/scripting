@@ -6,7 +6,7 @@ import log_helper
 import xml.etree.ElementTree as XmlTree
 import xml.dom.minidom as minidom
 
-logger = log_helper.setup_logger(name="dictionary_merge", level=logging.DEBUG, log_to_file=True)
+logger = log_helper.setup_logger(name="dictionary_merge", level=logging.DEBUG, log_to_file=False)
 
 
 class BaseDictionaryProvider:
