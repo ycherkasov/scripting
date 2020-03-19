@@ -39,18 +39,32 @@ def main():
 
     print("Environment variable PROJECTS=%s", projects_dir)
 
-    personal_idea_dict = os.path.join(projects_dir, "personal_scripting/dictionaries/idea/atatat.xml")
-    if not os.path.isfile(personal_idea_dict):
-        print("Personal IDEA dictionary is not found, exiting hook")
+    dictionaries_project = os.path.join(projects_dir, "personal_scripting/dictionaries")
+    if not os.path.isdir(dictionaries_project):
+        print("Personal IDEA dictionary directory is not found, exiting hook")
         sys.exit(0)
 
-    print("Personal IDEA dictionary location %s", personal_idea_dict)
+    print("Personal IDEA dictionary location %s", dictionaries_project)
+
+    python_script = os.path.join(dictionaries_project, "dictionary_merge.py")
+    personal_idea_dict = os.path.join(dictionaries_project, "idea/atatat.xml")
+
+    if not os.path.isfile(python_script) or not os.path.isfile(personal_idea_dict):
+        print("Python dictionary merger is not found, exiting hook")
+        sys.exit(0)
 
     hook_dir = os.getcwd()
     project_dir = os.path.join(hook_dir, "..")
 
     print("Hook directory %s", hook_dir)
     print("Expected project directory %s", project_dir)
+
+    dictionaries = files_with_compare(project_dir, "atatat.xml")
+    merge_command = "python3 %s --idea-dictionary %s" % (python_script, personal_idea_dict)
+    for dictionary in dictionaries:
+        merge_command = merge_command + (" --idea-dictionary %s" % dictionary)
+
+    os.system(merge_command)
 
     return 0
 
