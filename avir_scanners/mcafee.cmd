@@ -1,3 +1,3 @@
 REM Intel McAfee GetSusp
-REM https://www.mcafee.com/enterprise/en-gb/downloads/free-tools/getsusp.html
+wget.exe -O C:/Users/atatat/Downloads/getsusp64.exe http://downloadcenter.mcafee.com/products/mcafee-avert/getsusp/getsusp64.exe
 getsusp64.exe --SILENT
