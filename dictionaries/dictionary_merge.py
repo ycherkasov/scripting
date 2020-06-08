@@ -132,7 +132,7 @@ class VAssistDictionaryProvider(BaseDictionaryProvider):
 
 def main():
     """
-    Uninstall applications based on list, or simply retrieve the list of installed applications
+    Merge dictionaries using provided command-line params.
     :return: System return code
     """
     parser = argparse.ArgumentParser(description='Command-line params')
