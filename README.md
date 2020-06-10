@@ -22,6 +22,7 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
 * Windows Powershell: disable SMB1
 * Windows Registry: Deny Unspecified driver install
 * Windows Script Host: create users and home directories from the list
+* Python: Merge dictionaries for IntelliJ Idea and Visual Assist
 * Python: the script looking for all directories with C/C++ headers and prints output into file
 * Python: script creates a simple string hash
 * Python: bulk rename script
