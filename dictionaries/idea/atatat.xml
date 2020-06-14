@@ -14,14 +14,17 @@
       <w>comntools</w>
       <w>cortana</w>
       <w>cyber</w>
+      <w>emoji</w>
       <w>filesize</w>
       <w>filesystems</w>
       <w>filetable</w>
+      <w>geodata</w>
       <w>homedir</w>
       <w>ipdata</w>
       <w>msbuild</w>
       <w>multithreading</w>
       <w>pagefile</w>
+      <w>pypi</w>
       <w>reinstallation</w>
       <w>runbackup</w>
       <w>subindex</w>
