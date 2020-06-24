@@ -19,6 +19,7 @@
       <w>emoji</w>
       <w>endlines</w>
       <w>filenames</w>
+      <w>filepath</w>
       <w>filesize</w>
       <w>filesystems</w>
       <w>filetable</w>
