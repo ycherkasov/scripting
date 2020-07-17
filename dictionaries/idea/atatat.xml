@@ -24,6 +24,7 @@
       <w>emoji</w>
       <w>emplaced</w>
       <w>endlines</w>
+      <w>falsy</w>
       <w>filenames</w>
       <w>filepath</w>
       <w>filesize</w>
@@ -38,6 +39,7 @@
       <w>lvalues</w>
       <w>maxmind</w>
       <w>msbuild</w>
+      <w>msft</w>
       <w>multithreading</w>
       <w>mutexes</w>
       <w>overlive</w>
@@ -45,10 +47,12 @@
       <w>pagefile</w>
       <w>pypi</w>
       <w>qstandarditem</w>
+      <w>realpath</w>
       <w>reinstallation</w>
       <w>runbackup</w>
       <w>rvalue</w>
       <w>significand</w>
+      <w>stocknames</w>
       <w>subindex</w>
       <w>subkey</w>
       <w>subkeys</w>

@@ -20,6 +20,7 @@ destructors
 emoji
 emplaced
 endlines
+falsy
 filenames
 filepath
 filesize
@@ -34,6 +35,7 @@ lvalue
 lvalues
 maxmind
 msbuild
+msft
 multithreading
 mutexes
 overlive
@@ -41,10 +43,12 @@ overliving
 pagefile
 pypi
 qstandarditem
+realpath
 reinstallation
 runbackup
 rvalue
 significand
+stocknames
 subindex
 subkey
 subkeys
