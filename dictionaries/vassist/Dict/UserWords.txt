@@ -26,11 +26,14 @@ filepath
 filesize
 filesystems
 filetable
+freevars
 geodata
 homedir
 ipdata
 ipqs
 ipqualityscore
+keyargs
+kwdefaults
 lvalue
 lvalues
 maxmind
@@ -43,6 +46,7 @@ overliving
 pagefile
 pypi
 qstandarditem
+qualname
 realpath
 reinstallation
 runbackup

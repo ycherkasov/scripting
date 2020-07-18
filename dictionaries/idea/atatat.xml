@@ -30,11 +30,14 @@
       <w>filesize</w>
       <w>filesystems</w>
       <w>filetable</w>
+      <w>freevars</w>
       <w>geodata</w>
       <w>homedir</w>
       <w>ipdata</w>
       <w>ipqs</w>
       <w>ipqualityscore</w>
+      <w>keyargs</w>
+      <w>kwdefaults</w>
       <w>lvalue</w>
       <w>lvalues</w>
       <w>maxmind</w>
@@ -47,6 +50,7 @@
       <w>pagefile</w>
       <w>pypi</w>
       <w>qstandarditem</w>
+      <w>qualname</w>
       <w>realpath</w>
       <w>reinstallation</w>
       <w>runbackup</w>
