@@ -27,4 +27,5 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
 * Python: script creates a simple string hash
 * Python: bulk rename script
 * Python: JSON Pretty Print
+* Python: Temp files cleaner
 * Clang: Clang-format example config
