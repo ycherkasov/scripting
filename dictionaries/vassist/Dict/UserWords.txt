@@ -5,6 +5,7 @@ POWERSHELL
 RintimeBrocker
 Significand
 Valueformat
+addin
 alignof
 apis
 atatat
@@ -16,7 +17,9 @@ const's
 constexpr's
 cortana
 cyber
+datatype
 destructors
+dialup
 emoji
 emplaced
 endlines
@@ -29,6 +32,7 @@ filetable
 freevars
 geodata
 homedir
+hwid
 ipdata
 ipqs
 ipqualityscore
@@ -47,6 +51,7 @@ pagefile
 pypi
 qstandarditem
 qualname
+quickstart
 realpath
 reinstallation
 runbackup
@@ -58,7 +63,11 @@ subkey
 subkeys
 subproduct
 subvalue
+vals
 vassist
 webgl
+xlsm
+xlsx
+xlwings
 yandex
 yozh
