@@ -16,6 +16,7 @@
       <w>autocomplete</w>
       <w>autofocus</w>
       <w>chargeback</w>
+      <w>cherkasov</w>
       <w>comntools</w>
       <w>const's</w>
       <w>constexpr's</w>
@@ -24,6 +25,7 @@
       <w>datatype</w>
       <w>destructors</w>
       <w>dialup</w>
+      <w>dropdown</w>
       <w>emoji</w>
       <w>emplaced</w>
       <w>endlines</w>
@@ -37,6 +39,7 @@
       <w>geodata</w>
       <w>homedir</w>
       <w>hwid</w>
+      <w>intelli</w>
       <w>ipdata</w>
       <w>ipqs</w>
       <w>ipqualityscore</w>
@@ -75,6 +78,7 @@
       <w>xlwings</w>
       <w>yandex</w>
       <w>yozh</w>
+      <w>yurii</w>
     </words>
   </dictionary>
 </component>

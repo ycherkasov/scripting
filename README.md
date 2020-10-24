@@ -1,40 +1,47 @@
 # scripting
 Scripts collection to automate boring stuff on Windows/Mac/Linux
 
-* Dev
-    * Windows Cmd: Build C++ Boost
-    * Python: Merge dictionaries for IntelliJ Idea and Visual Assist
-    * Clang: Clang-format example config
-* Mac
-    * OSX Bash: switch default C++ compiler between GCC and Clang
-    * OSX Bash: make iso image 
-    * OSX Bash: Geeklet for displaying system information on desktop
-    * OSX Bash: install general-purpose packages from Homebrew
+* /Dev
+    * /boost: [Windows Cmd] Build C++ Boost
+    * /dictionaries: [Python] Merge dictionaries for IntelliJ Idea and Visual Assist
+    * /clang: [Clang-format] Clang-format example config
+    * /openssl: [Windows Cmd] Build OpenSSL
+* /Mac
+    * /gcc_symlinks: [OSX zsh] switch default C++ compiler between GCC and Clang
+    * /iso: [OSX zsh] make iso image 
+    * /geeklets: [html, OSX zsh] Geeklet for displaying system information on desktop
+    * /brewfile: [Brewfile] install general-purpose packages from Homebrew
 * Posix
-    * Bash: add to *.tar only hidden directories
-    * Bash: unpack archive into the current directory
-    * Bash: backup whole partition
-    * Bash: execute "git pull" in every dir
-    * Bash: find text 'text-to-find' in all files
-    * Bash: recursively remove all .svn dirs
-    * Bash: make iso image
+    * /apt: [Bash] install VS Code on apt-based system
+    * /iso: [Bash] make iso image 
+    * /archives: [Bash] add to *.tar only hidden directories
+    * /archives: [Bash] unpack archive into the current directory
+    * /dd: [Bash] backup whole partition
+    * /find: [Bash] execute "git pull" in every dir
+    * /find: [Bash] find text 'text-to-find' in all files
+    * /find: [Bash] recursively remove all .svn dirs
+    * /iso: [Bash] make iso image
+    * /iso: [Bash] write to dvd
 * Raspberry
     * init RasPi setup
 * Python
-    * Python: the script looking for all directories with C/C++ headers and prints output into file
-    * Python: script creates a simple string hash
-    * Python: bulk rename script
-    * Python: JSON Pretty Print
-    * Python: Temp files cleaner
+    * /bulk_rename [Python] bulk rename script
+    * /hashstring [Python] script creates a simple string hash
+    * /json_pretty_print [Python] pretty print JSON string
+    * /json_pretty_print [Python] the script looking for all directories with C/C++ headers and prints output into file
+    * /tempfile_cleaner [Python] Temp files cleaner
 * Windows
-    * Windows Cmd: silent install of Microsoft Safety Scanner
-    * Windows Cmd: silent install of Intel McAfee
-    * Windows Cmd: count substring in text file
-    * Windows Cmd: create Visual Studio 2017 offline installer (unfinished)
-    * Windows Cmd: Build OpenSSL
-    * Windows Cmd: Turning off hiberfil.sys
-    * Windows Cmd: Temporarily add Qt directory to PATH
-    * Windows Powershell: enable Linux subsystem om Windows 10
-    * Windows Powershell: disable SMB1
-    * Windows Registry: Deny Unspecified driver install
-    * Windows Script Host: create users and home directories from the list
+    * /avir_scanners: [Windows Cmd] silent install of Microsoft Safety Scanner
+    * /avir_scanners: [Windows Cmd] silent install of Intel McAfee
+    * /far_manager: [XML] Far Manager configuration
+    * /find: [Windows Cmd] Windows Cmd: count substring in text file
+    * /init: [Windows Cmd] Turning off hiberfil.sys
+    * /init: [Windows Cmd] Temporarily add Qt directory to PATH
+    * /init: [Powershell] enable Linux subsystem om Windows 10
+    * /init: [Powershell] disable SMB1
+    * /mcs: [MSC] Windows Management Console with working set of snap-ins
+    * /security: [Reg] Deny Unspecified driver install
+    * /smb: [Powershell] Detect, enable and disable Windows smb
+    * /users: [WSH] create users and home directories from the list
+    * /vs2017: [Windows Cmd] create Visual Studio 2017 offline installer (unfinished)
+    * /windows_8_classic: [XML] Windows Classic style for Windows 8 SP1
