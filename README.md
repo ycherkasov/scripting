@@ -32,6 +32,8 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
     * Windows Cmd: count substring in text file
     * Windows Cmd: create Visual Studio 2017 offline installer (unfinished)
     * Windows Cmd: Build OpenSSL
+    * Windows Cmd: Turning off hiberfil.sys
+    * Windows Cmd: Temporarily add Qt directory to PATH
     * Windows Powershell: enable Linux subsystem om Windows 10
     * Windows Powershell: disable SMB1
     * Windows Registry: Deny Unspecified driver install

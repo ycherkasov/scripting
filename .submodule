@@ -1,0 +1,3 @@
+[submodule "3rd_party/date"]
+	path = 3rd_party/windows_10_antispy
+	url = https://github.com/yuchdev/windows_10_antispy.git
