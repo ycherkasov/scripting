@@ -1,0 +1,166 @@
+# .\wureset\lang\
+# polish.txt
+
+# Zresetuj narzedzie Windows Update (http://wureset.com)
+
+# Ten plik mozna zmodyfikowac, aby byl zgodny z innymi jezykami.
+# Aby wydrukowac koncowa linie wstaw "\n" do tekstu.
+
+# Jezyk: Polski
+# Author: Manuel Gil.
+# Aktualizacja: 10/18/2018
+# Wersja: 1.0.0.1
+
+# Ostrzezenia
+1000|Nacisnij dowolny klawisz, aby kontynuowac . . .
+1001|Wystapil nieoczekiwany blad.
+1002|Wybierz opcje: 
+1003|Niepoprawna opcja.
+1004|Przepraszamy, ta opcja nie jest dostepna w tym systemie operacyjnym.
+1005|Operacja zostala pomyslnie zakonczona.
+1006|Wystapil blad podczas operacji.
+1007|Usluga nie mogla zostac zatrzymana. Czy chcesz spróbowac ponownie? (T/N): 
+
+# Zgodnosc
+2000|Przepraszamy, ten system operacyjny nie jest kompatybilny z tym narzedziem.
+2001|    Wystapil blad podczas próby zweryfikowania systemu.\n    Byc moze korzystasz z wersji komercyjnej lub próbnej.\n\n    W przeciwnym razie sprawdz, czy twój system ma poprawna poprawke bezpieczenstwa.\n
+
+# Elewacja
+3000|Sprawdzanie uprawnien administratora.
+3001|    Nie pracujesz jako Administrator.\n    To narzedzie nie moze wykonac swojej pracy bez podniesienia.\n\n    Musisz uruchomic to narzedzie jako Administrator.\n
+
+# Warunki
+4000|Warunki uzytkowania.
+4001|    Metody zawarte w tym narzedziu modyfikuja pliki i ustawienia rejestru.\n    Podczas gdy jestes testowany i masz tendencje do pracy, nie bierzemy na siebie odpowiedzialnosci\n    korzystanie z tego narzedzia.\n\n    To narzedzie jest dostarczane bez gwarancji. Wszelkie spowodowane szkody to twoje\n    wlasna odpowiedzialnosc.\n\n    Jesli nie masz pewnosci, mozesz go przejrzec.\n    https://github.com/ManuelGil\n
+4002|Czy chcesz kontynuowac ten proces? (T/N): 
+
+# Menu
+5000|To narzedzie resetuje skladniki Windows Update.
+5001|Ochrona systemu otwartego.
+5002|Przywraca skladniki Windows Update.
+5003|Usun tymczasowe pliki Windows.
+5004|Otwórz opcje przegladarki Internet Explorer.
+5005|Wykonaj Chkdsk na partycji Windows.
+5006|Uruchom narzedzie Kontroler plików systemowych.
+5007|Skanuje obraz pod katem uszkodzen w magazynie komponentów.
+5008|Sprawdz, czy obraz zostal oznaczony jako uszkodzony.
+5009|Wykonuje automatyczne operacje naprawcze.
+5010|Wyczysc wymienione elementy.
+5011|Czysci nieprawidlowe wartosci rejestru.
+5012|Napraw/Przywraca konfiguracje Winsock.
+5013|Wyszukaj aktualizacje systemu Windows.
+5014|Poznaj inne lokalne rozwiazania.
+5015|Poznaj inne rozwiazania online.
+5016|Pobierz narzedzia diagnostyczne.
+5017|Uruchom ponownie komputer.
+5018|\n                         ?. Pomoc.    *. Ustawienia.    0. Zamknij.\n
+
+# Funkcje
+6000|Otwieranie ochrony systemu.
+6001|Zatrzymywanie uslug Windows Update.
+6002|Weryfikacja statusu uslugi.\n
+6003|    Nie udalo sie zatrzymac uslugi inteligentnego transferu uslug BITS w tle.\n
+6004|    Nie mozna zatrzymac uslugi Windows Update.\n
+6005|    Nie udalo sie zatrzymac uslugi tozsamosci aplikacji.\n
+6006|    Nie mozna zatrzymac uslugi szyfrowania.\n
+6007|Usuwanie plików qmgr * .dat.
+6008|Usuwanie kopii zapasowych programu SoftwareDistribution.
+6009|Zmiana nazwy folderów SoftwareDistribution.
+6010|    Nie mozna zmienic nazwy folderu SoftwareDistribution.\n
+6011|Przywracanie uslug BITS i Windows Update dla domyslnego deskryptora zabezpieczen.
+6012|Ponownie zarejestruj pliki BITS i pliki Windows Update.
+6013|Przywracanie Winsock.
+6014|Przywracanie serwera proxy WinHTTP.
+6015|Przywracanie uslug automatycznych.
+6016|Restartowanie uslug Windows Update.
+6017|Usuwanie plików tymczasowych z systemu.
+6018|Otwieranie opcji przegladarki Internet Explorer.
+6019|Sprawdz system plików i system metadanych systemu plików woluminu pod katem bledów logicznych i fizycznych (CHKDSK.EXE).
+6020|Skanuje pliki systemowe i naprawia uszkodzone lub brakujace pliki (SFC.exe).
+6021|Skanuje obraz pod katem uszkodzen w magazynie komponentów (DISM /ScanHealth Argument).
+6022|Sprawdz, czy nie wykryto uszkodzen obrazu (Argument DISM /CheckHealth).
+6023|Wykonuje operacje automatycznej naprawy (Argument DISM /RestoreHealth).
+6024|Wyczysc usuniete komponenty (DISM Argument/StartComponentCleanup).
+6025|Zmiana nieprawidlowych wartosci w rejestrze.
+6026|Tworzenie kopii zapisu w: 
+6027|    Zmiany nie zostaly wprowadzone do rejestru.\n
+6028|    Spróbuj ponownie pózniej.\n
+6029|Sprawdzanie kopii zapasowej.
+6030|    Cos poszlo nie tak.\n
+6031|    Przed kontynuowaniem recznie utwórz kopie zapasowa rejestru.\n
+6032|Usuwanie wartosci z rejestru.
+6033|Dodawanie wartosci do rejestru.
+6034|Resetowanie ustawien sterowania Winsock.
+6035|Resetowanie rekordów transakcji.
+6036|Przywracanie TCP/IP.
+6037|Przywracanie Winsock.
+6038|Przywracanie domyslnych wartosci dyrektywy.
+6039|Przywracanie pamieci podrecznej DNS.
+6040|Konfigurowanie serwera proxy.
+6041|Szukasz aktualizacji.
+6042|Czekaj . . .
+6043|Wyszukiwanie rozwiazan na tym komputerze.
+6044|Wyszukiwanie rozwiazan online.
+6045|Ponowne uruchomienie systemu.
+6046|    System uruchomi sie ponownie po 60 sekundach.\n Zapisz wszystkie dokumenty otwarte.\n
+6047|System uruchomi sie ponownie po 60 sekundach. Prosze zachowac wszystkie dokumenty otwarte.
+6048|Pobierz i uruchom diagnostyke swojego systemu.
+6049|Windows Update w systemie Windows 7, Windows 8 i Windows 8.1.
+6050|Windows Update w systemie Windows 10.
+6051|Aplikacje w Windows 8.1.
+6052|Aplikacje w systemie Windows 10.
+6053|Menu Start w systemie Windows 10.
+6054|                                                        0. Powrót
+
+# Polecenia
+7000|\nTo narzedzie resetuje skladniki Windows Update.\n
+7001|Uzyj:\n
+7002|    WURESET [/reset] [/search] [/clean:{temp|regs|sock}]
+7003|            [/sfc] [/dism:{scan|check|repair|clean}]\n
+7004|Lista parametrów:\n
+7005|    /reset        Reset the Windows Update Components.
+7006|    /search       Search updates.
+7007|    /clean        Clean options.
+7008|        temp      Delete temporary files in Windows.
+7009|        regs      Change invalid values in the Registry.
+7010|        sock      Reset the Winsock settings.
+7011|    /sfc          Scans all protected system files.
+7012|    /dism         Dism options.
+7013|        scan      Scan the image to check for corruption.
+7014|        check     Check the detected corruptions.
+7015|        repair    Repair the image.
+7016|        clean     Clean up the superseded components.
+7017|    /?            Displays this help message.\n
+7018|Przyklad uzycia:\n
+7019|    WURESET /reset
+7020|    WURESET /clean:temp
+7021|    WURESET /clean:regs:temp
+7022|    WURESET /dism:scan:repair:clean\n
+7023|Autor:\n
+7024|    Manuel Gil.\n
+7025|\nWURESET [/reset] [/search] [/clean:{temp|regs|sock}]
+7026|        [/sfc] [/dism:{scan|check|repair|clean}]\n
+7027|Opis:\n
+7028|    To narzedzie resetuje skladniki Windows Update.\n
+7029|Przyklad uzycia:\n
+7030|    WURESET /reset
+7031|    WURESET /clean:temp
+7032|    WURESET /clean:regs:temp
+7033|    WURESET /dism:scan:repair:clean\n
+7034|Wpisz "WURESET /?" aby wyswietlic szczególy.\n
+
+# Pomoc
+8000|index.html
+8001|http://docs.wureset.com
+
+# Aktualizacje wureset 11.0.0.7
+# ---------
+
+# Menu
+9000|Wymus zasady aktualizacji.
+9001|Znajdz klucz produktu Windows.
+
+# Funkcje
+9100|Anulowanie procesu Windows Update.
+9101|Wymuszenie aktualizacji zasad.
+9102|Wyszukiwanie klucza produktu.
