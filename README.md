@@ -6,11 +6,6 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
     * /dictionaries: [Python] Merge dictionaries for IntelliJ Idea and Visual Assist
     * /clang: [Clang-format] Clang-format example config
     * /openssl: [Windows Cmd] Build OpenSSL
-* /Mac
-    * /gcc_symlinks: [OSX zsh] switch default C++ compiler between GCC and Clang
-    * /iso: [OSX zsh] make iso image 
-    * /geeklets: [html, OSX zsh] Geeklet for displaying system information on desktop
-    * /brewfile: [Brewfile] install general-purpose packages from Homebrew
 * Posix
     * /apt: [Bash] install VS Code on apt-based system
     * /iso: [Bash] make iso image 
@@ -22,8 +17,6 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
     * /find: [Bash] recursively remove all .svn dirs
     * /iso: [Bash] make iso image
     * /iso: [Bash] write to dvd
-* Raspberry
-    * init RasPi setup
 * Python
     * /bulk_rename [Python] bulk rename script
     * /hashstring [Python] script creates a simple string hash
@@ -33,7 +26,6 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
 * Windows
     * /avir_scanners: [Windows Cmd] silent install of Microsoft Safety Scanner
     * /avir_scanners: [Windows Cmd] silent install of Intel McAfee
-    * /far_manager: [XML] Far Manager configuration
     * /find: [Windows Cmd] Windows Cmd: count substring in text file
     * /init: [Windows Cmd] Turning off hiberfil.sys
     * /init: [Windows Cmd] Temporarily add Qt directory to PATH
@@ -45,3 +37,4 @@ Scripts collection to automate boring stuff on Windows/Mac/Linux
     * /users: [WSH] create users and home directories from the list
     * /vs2017: [Windows Cmd] create Visual Studio 2017 offline installer (unfinished)
     * /windows_8_classic: [XML] Windows Classic style for Windows 8 SP1
+    * /windows_update: [Powershell, Windows Cmd, Exe] Perform Windows Update; Reset Windows Update
