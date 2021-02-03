@@ -10,22 +10,35 @@
       <w>Significand</w>
       <w>Valueformat</w>
       <w>addin</w>
+      <w>addr</w>
+      <w>albanie</w>
+      <w>albanien</w>
+      <w>albtelecom</w>
+      <w>albânia</w>
       <w>alignof</w>
+      <w>antifraud</w>
       <w>apis</w>
+      <w>asctime</w>
       <w>atatat</w>
       <w>autocomplete</w>
       <w>autofocus</w>
+      <w>btelecom</w>
       <w>chargeback</w>
       <w>cherkasov</w>
       <w>comntools</w>
       <w>const's</w>
       <w>constexpr's</w>
       <w>cortana</w>
+      <w>csvfile</w>
       <w>cyber</w>
       <w>datatype</w>
+      <w>datatypes</w>
+      <w>dbclient</w>
       <w>destructors</w>
       <w>dialup</w>
       <w>dropdown</w>
+      <w>durresit</w>
+      <w>durrës</w>
       <w>emoji</w>
       <w>emplaced</w>
       <w>endlines</w>
@@ -37,14 +50,18 @@
       <w>filetable</w>
       <w>freevars</w>
       <w>geodata</w>
+      <w>geoname</w>
       <w>homedir</w>
       <w>hwid</w>
       <w>intelli</w>
       <w>ipdata</w>
+      <w>iplocation</w>
       <w>ipqs</w>
       <w>ipqualityscore</w>
+      <w>iprange</w>
       <w>keyargs</w>
       <w>kwdefaults</w>
+      <w>levelname</w>
       <w>lvalue</w>
       <w>lvalues</w>
       <w>maxmind</w>
@@ -56,6 +73,7 @@
       <w>overliving</w>
       <w>pagefile</w>
       <w>pypi</w>
+      <w>qarku</w>
       <w>qstandarditem</w>
       <w>qualname</w>
       <w>quickstart</w>
@@ -63,6 +81,7 @@
       <w>reinstallation</w>
       <w>runbackup</w>
       <w>rvalue</w>
+      <w>shodan</w>
       <w>significand</w>
       <w>stocknames</w>
       <w>subindex</w>
@@ -72,6 +91,7 @@
       <w>subvalue</w>
       <w>vals</w>
       <w>vassist</w>
+      <w>vulns</w>
       <w>webgl</w>
       <w>xlsm</w>
       <w>xlsx</w>
