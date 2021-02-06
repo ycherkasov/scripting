@@ -1,0 +1,1 @@
+python.exe dictionary_merge.py --idea-dictionary %1 --idea-dictionary C:\Users\atatat\Projects\scripting\Dev\dictionaries\idea\atatat.xml --vassist-dictionary C:\Users\atatat\Projects\scripting\dictionaries\vassist\Dict\UserWords.txt --vassist-dictionary C:\Users\atatat\AppData\Roaming\VisualAssist\Dict\UserWords.txt
